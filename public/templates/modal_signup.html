@@ -1,0 +1,201 @@
+ <!-- Trigger/Open The Modal 
+<button id="myBtn" onclick="open_modal()">Open Modal</button>
+-->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+	<!-- Modal content -->
+	<div class="modal-content">
+		<span class="close" onclick="close_modal()">&times;</span>
+		<form name="myForm" >
+		
+		
+		
+		
+			<!-- ================================================================= -->
+			
+			<div class="tab">
+				<div id="modal_signup_left">
+			
+					<h2>Sign up to get your own personalized Reddit experience!</h2>
+					<p>By having a Reddit account, you can subscribe, vote, and comment on all your 
+					favorite Reddit content. Sign up in just seconds.</p>
+					
+					<span>CREATE ACCOUNT</span>
+					<input type="email" placeholder="email address" id="email"></input> 
+					<button id="signup_NEXT_btn_email" onclick="return signup_email_next_btn(0)">Next</button>
+				
+					
+					
+					<div id="already">Already have an account? <a href="#">Log In</a></div>
+					<div id="fine_note">
+						By signing up, you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Privacy Policy</a>
+						and <a href="#">Content Policy</a>.
+					</div>
+					
+				</div>
+
+				<div id="modal_signup_right">
+					<img src="images/signup_image.PNG" alt="happyReddit"/>
+				</div>
+			</div>
+			
+			
+			
+			
+			<!-- ================================================================= -->
+			
+			<div class="tab">
+				<div class="commu_choose_top">
+					<h2>Find the good stuff</h2>
+					<p>Reddit is filled with interest based communities, offering something for everyone. 
+					Check out some communities and we recommend you subscribe to at least 5.</p>
+				</div>
+				<div class="commu_choose_mid">
+					<ul class="subreddit_picker_categories">
+						<li class="chosen">Just for you</li>
+						<li>Redditors</li>
+						<li>Popular</li>
+						<li>Just for you</li>
+						<li>Redditors</li>
+						<li>Popular</li>
+						<li>Just for you</li>
+						<li>Redditors</li>
+						<li>Popular</li>
+						<li>Just for you</li>
+						<li>Redditors</li>
+						<li>Popular</li>
+						<li>Just for you</li>
+						<li>Redditors</li>
+						<li>Popular</li>
+					</ul>
+					
+					<ul class="subreddit_picker_subreddits">
+						<h3>WHAT WE THINK YOU MIGHT LIKE...</h3>
+						<li>
+							<div class="img_subreddit">
+								<img src="https://www.themarysue.com/wp-content/uploads/2014/12/reddit-alien-320x240.png"/>
+							 </div>
+							 <div class="middle_subreddit">
+								<span>/r<strong>BadMtgbCombos</strong></span>
+								<span>4.9k subscribers</span>
+								<p>Posts should be card combos from Magic the Gathering that are extremely difficult to pull</p>
+							 </div>
+							 <button class="followed-btn" onclick="test()">FOLLOWED</button>
+						</li>
+						
+						<li>
+							<div class="img_subreddit">
+								<img src="http://www5.pcmag.com/media/images/445203-panasonic-lumix-dmc-fz70-sample-image.jpg?thumb=y"/>
+							 </div>
+							 <div class="middle_subreddit">
+								<span>/r<strong>BadMtgbCombos</strong></span>
+								<span>4.9k subscribers</span>
+								<p>Posts should be card combos from Magic the Gathering that are extremely difficult to pull</p>
+							 </div>
+							 <button class="followed-btn">FOLLOWED</button>
+						</li>
+						
+						<li>
+							<div class="img_subreddit">
+								<img src="http://www.simpopdf.com/sample/image-to-pdf-sample.jpg"/>
+							 </div>
+							 <div class="middle_subreddit">
+								<span>/r<strong>BadMtgbCombos</strong></span>
+								<span>4.9k subscribers</span>
+								<p>Posts should be card combos from Magic the Gathering that are extremely difficult to pull</p>
+							 </div>
+							 <button class="followed-btn">FOLLOWED</button>
+						</li>
+						
+						
+						<!--<span>YOU MIGHT ALSO LIKE...</span> -->
+						<h3>WHAT WE THINK YOU MIGHT LIKE...</h3>
+						<li>
+							<div class="img_subreddit">
+								<img src="https://www.themarysue.com/wp-content/uploads/2014/12/reddit-alien-320x240.png"/>
+							 </div>
+							 <div class="middle_subreddit">
+								<span>/r<strong>BadMtgbCombos</strong></span>
+								<span>4.9k subscribers</span>
+								<p>Posts should be card combos from Magic the Gathering that are extremely difficult to pull</p>
+							 </div>
+							 <button class="follow-btn">FOLLOW</button>
+						</li>
+						
+						<li>
+							<div class="img_subreddit">
+								<img src="https://www.themarysue.com/wp-content/uploads/2014/12/reddit-alien-320x240.png"/>
+							 </div>
+							 <div class="middle_subreddit">
+								<span>/r<strong>BadMtgbCombos</strong></span>
+								<span>4.9k subscribers</span>
+								<p>Posts should be card </p>
+							 </div>
+							 <button class="follow-btn">FOLLOW</button>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="commu_choose_bottom">
+					<button class="signup_BACK_btn" onclick="return signup_email_back_btn(1)">BACK</button>
+					<button class="signup_NEXT_btn" onclick="return signup_email_next_btn(1)">Next</button>
+					<span id="signup_steps">Step 2 of 3</span>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			<!-- ================================================================= -->
+			
+			<div class="tab">
+				<div id="modal_signup_password_left">
+					<div>
+						<h2>Choose your username</h2>
+						<p>Your username is how other community members will see you. 
+						This name will be used to credit you for things you share on Reddit.
+						What should we call you?</p>
+						<span>CHOOSE USERNAME</span></br>
+						<input type="text" oninput="checkUsername(this);" value="hunterMan128" id="email"></input><img id="usernameValidTick" 
+																												src="images/greenTick.png"></img>
+																												
+																												<img id="usernameInvalidTick" 
+																												src="images/redAlert.png"></img>
+																												
+																												</br><!--You need to auto generate example username.-->
+						<span>SET PASSWORD</span></br>
+						<input type="password" placeholder="password" id="password"></input></br></br>
+						<!--<div class="g-recaptcha" data-sitekey="6LcL4EYUAAAAAIAfQFUg2a-JztHdZiEqvEMqQPDL"></div></br>-->
+						<span id="signup_steps">Step 3 of 3</span>
+					</div>
+				</div>
+				<div class="modal_signup_password_right">
+					<p>Having a hard time picking a name? Here are some available suggestions.</p>
+					<ul class="signup_last_list">
+						<li class="signup_step3_list"><a href="#">SpiritualSector</a></li>
+						<li class="signup_step3_list"><a href="#">MainDevice</a></li>
+						<li class="signup_step3_list"><a href="#">CrazyHighway</a></li>
+						<li class="signup_step3_list"><a href="#">PrettySection</a></li>
+						<li class="signup_step3_list"><a href="#">InterestingPatience</a></li>
+						<li class="signup_step3_list" style="font-weight: bold; margin-top: 20px;"><a href="#">Refresh suggestions</a></li>
+					</ul>
+					
+					<button class="signup_BACK_btn" onclick="return signup_email_back_btn(2)">BACK</button>
+					<button class="signup_NEXT_btn" onclick="return signup_email_next_btn(2)">Next</button>
+				</div>
+				
+			</div>
+			<div id="signup_success_msg">
+				<h3>You have successfully signed up. Welcome!</h3>
+			</div>
+			
+		</form>
+		
+		
+	</div>
+
+
+	
+</div> 
